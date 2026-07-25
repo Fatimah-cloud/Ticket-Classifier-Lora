@@ -1,4 +1,4 @@
-# Support Ticket Classifier — LoRA Fine-Tuning
+# Support Ticket Classifier LoRA Fine-Tuning
 
 Fine-tuning Qwen2.5-1.5B-Instruct with LoRA to reliably classify support tickets into 4 categories: `Billing`, `Technical`, `Account`, `General`.
 
@@ -24,6 +24,6 @@ The base model frequently invented its own category names (e.g. `"Suspension"`, 
 A ~200-example hand-curated synthetic dataset of support tickets, 50 per category, 85/15 train/test split.
 
 
-## Notes / limitations
+## limitations
 
 - The dataset is intentionally small and synthetic; a larger, more diverse dataset (and/or more training epochs) would likely close the gap seen in the no-hint generalization test.

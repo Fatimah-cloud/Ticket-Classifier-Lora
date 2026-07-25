@@ -21,7 +21,7 @@ The base model frequently invented its own category names (e.g. `"Suspension"`, 
 
 ## Data
 
-A ~200-example hand-curated synthetic dataset of support tickets, 50 per category, 85/15 train/test split.
+A ~200-example hand-curated synthetic dataset of support tickets, 50 per category, 85/15 train/test split, Built by hand rather than scraped, because label cleanliness matters more than volume at this scale every example has an unambiguous, verified-by-construction label, which gives a small LoRA adapter a crisp signal to learn from.
 
 
 ## limitations

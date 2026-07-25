@@ -1,11 +1,11 @@
 # Support Ticket Classifier — LoRA Fine-Tuning
 
-Fine-tuning [Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct) with **LoRA** to reliably classify support tickets into 4 categories: `Billing`, `Technical`, `Account`, `General`.
+Fine-tuning Qwen2.5-1.5B-Instruct with LoRA to reliably classify support tickets into 4 categories: `Billing`, `Technical`, `Account`, `General`.
 
 
 ## What this is
 
-A small, from-scratch example of parameter-efficient fine-tuning (PEFT): instead of updating all 1.5B parameters of the base model, [LoRA](https://arxiv.org/abs/2106.09685) freezes the pretrained weights and trains a small set of low-rank adapter matrices injected into the attention layers — about **4.4M trainable parameters (0.28%)** of the total model.
+A small, from-scratch example of parameter-efficient fine-tuning (PEFT): instead of updating all 1.5B parameters of the base model,LoRA freezes the pretrained weights and trains a small set of low-rank adapter matrices injected into the attention layers — about 4.4M trainable parameters (0.28%) of the total model.
 
 The goal isn't to teach the model new facts it's to teach it a consistent output format and exact label vocabulary, which is exactly the kind of narrow behavioral shift LoRA is well suited for.
 
